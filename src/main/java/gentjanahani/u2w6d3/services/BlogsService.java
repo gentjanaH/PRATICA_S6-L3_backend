@@ -1,21 +1,16 @@
-//package gentjanahani.u2w6d3.services;
-//
-//import gentjanahani.u2w6d3.entities.Authors;
-//import gentjanahani.u2w6d3.entities.Blogs;
-//import gentjanahani.u2w6d3.payloads.NewAuthorPayload;
-//import gentjanahani.u2w6d3.payloads.NewBlogPayload;
+package gentjanahani.u2w6d3.services;
 
 import gentjanahani.u2w6d3.entities.Authors;
 import gentjanahani.u2w6d3.entities.Blogs;
 import gentjanahani.u2w6d3.payloads.NewBlogPayload;
+
 import gentjanahani.u2w6d3.repository.AuthorsRepository;
 import gentjanahani.u2w6d3.repository.BlogsRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
+
 import java.util.UUID;
 
 @Service

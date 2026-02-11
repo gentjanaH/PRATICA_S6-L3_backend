@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.UUID;
 
 @Entity
-@Table(name = "Authors")
+@Table(name = "authors")
 @Getter
 @Setter
 @ToString
