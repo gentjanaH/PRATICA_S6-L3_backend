@@ -9,5 +9,5 @@ import java.util.UUID;
 
 @Repository
 public interface BlogsRepository extends JpaRepository<Blogs, UUID> {
-    Optional<Blogs> findById(UUID idBlog);
+   
 }
