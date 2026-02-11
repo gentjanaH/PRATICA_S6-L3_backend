@@ -25,12 +25,11 @@ public class Blogs {
 
     //relazione ManyToOne
     @ManyToOne
-    private Authors authors;
+    private Authors author;
 
     public Blogs(String categoria, String titolo, String contenuto, int tempoDiLettura) {
         this.categoria = categoria;
         this.titolo = titolo;
-        this.cover = "https://picsum.photos/200/300";
         this.contenuto = contenuto;
         this.tempoDiLettura = tempoDiLettura;
     }

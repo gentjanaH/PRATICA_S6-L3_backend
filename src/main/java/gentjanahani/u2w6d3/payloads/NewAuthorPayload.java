@@ -10,6 +10,7 @@ import java.time.LocalDate;
 public class NewAuthorPayload {
     private String name;
     private String surname;
+    private String email;
     private LocalDate dateOfBirth;
 
 }
