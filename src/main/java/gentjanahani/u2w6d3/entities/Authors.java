@@ -1,0 +1,42 @@
+package gentjanahani.u2w6d3.entities;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import java.time.LocalDate;
+import java.util.Random;
+import java.util.UUID;
+
+@Entity
+@Table(name="Authors")
+@Getter
+@Setter
+@ToString
+public class Authors {
+    @Id
+    @GeneratedValue
+    @Setter(AccessLevel.NONE)
+    private UUID idAutore;
+
+    private String name;
+    private String surname;
+    private String email;
+    private LocalDate dataDiNascita;
+    private String avatar;
+
+    public Authors(String name, String surname, String email, LocalDate dataDiNascita){
+        this.name=name;
+        this.surname=surname;
+        this.email=email;
+        this.dataDiNascita=dataDiNascita;
+        this.avatar = "https://ui-avatars.com/api/?name=" + getName() + "+" + getSurname();
+
+
+    }
+}
